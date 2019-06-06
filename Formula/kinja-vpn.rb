@@ -4,14 +4,15 @@
 class KinjaVpn < Formula
   desc "Kinja VPN tools"
   homepage "https://kinja.com"
-  url "https://github.com/gawkermedia/kinja-vpn/releases/download/v1.0/kinja-vpn.tgz"
-  sha256 "9034018f30c3a7b78f2c12123abaaa10cb7ae7e20fea4ab97ac3149432d15b4e"
-  version "1.0.0"
+  url "https://github.com/gawkermedia/kinja-vpn/releases/download/v1.2/kinja-vpn.tgz"
+  sha256 "a2fc230183f02a9ff37e695492aac1acf2ee5c3894f3eab511b1916fad29e08d"
+  version "1.2.0"
   # depends_on "cmake" => :build
   depends_on "openconnect"
 
   def install
       bin.install "kinja-vpn"
+      system "kinja-vpn", "create-password"
   end
 
   test do
