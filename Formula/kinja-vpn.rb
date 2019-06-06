@@ -4,7 +4,7 @@
 class KinjaVpn < Formula
   desc "Kinja VPN tools"
   homepage "https://kinja.com"
-  url "https://github.com/gawkermedia/kinja-vpn/releases/download/v1.2/kinja-vpn.tgz"
+  url "https://github.com/gawkermedia/kinja-vpn/releases/download/v1.2/kinja-vpn.tar.gz"
   sha256 "a2fc230183f02a9ff37e695492aac1acf2ee5c3894f3eab511b1916fad29e08d"
   version "1.2.0"
   # depends_on "cmake" => :build
