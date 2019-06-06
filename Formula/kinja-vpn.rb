@@ -12,7 +12,7 @@ class KinjaVpn < Formula
 
   def install
       bin.install "kinja-vpn"
-      system "kinja-vpn", "create-password"
+      system "./kinja-vpn", "create-password"
   end
 
   test do
