@@ -11,8 +11,8 @@ class KinjaVpn < Formula
   depends_on "openconnect"
 
   def install
-      bin.install "kinja-vpn"
       system "./kinja-vpn", "create-password"
+      bin.install "kinja-vpn"
   end
 
   test do
