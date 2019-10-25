@@ -3,12 +3,14 @@
 class KinjaCurl < Formula
   desc "Small utility to query Play service endpoints during development"
   homepage "https://kinja.com"
-  url "https://github.com/gawkermedia/kinja-curl/releases/download/v1.1/kinja-curl.zip"
+  url "https://github.com/gawkermedia/kinja-curl/releases/download/v1.2/kinja-curl.zip"
   sha256 "f59ad1e0dc4d0f13c985db19b98c72c6fe3a6ae99788d5b696e17fa1ddfe32dc"
+  version "1.2.0"
 
   def install
     bin.install "kinja-curl"
     bash_completion.install "bash_completion" => "kinja-curl"
+    zsh_completion.install "zsh_completion" => "_kinja-curl"
   end
 
   test do
